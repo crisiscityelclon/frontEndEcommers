@@ -3,7 +3,7 @@ import { Card, CardHeader, CardMedia, CardContent, Typography } from "@mui/mater
 
 const Feed = (props) => {
   return (
-    <div style={style.feed}>
+    <div >
       <Card sx={{ maxWidth: 345 }}>
         <CardHeader
           title={props.product.name}
@@ -11,7 +11,7 @@ const Feed = (props) => {
         <CardMedia
           component="img"
           height="194"
-          image={props.product.image ? props.product.name: 'https://i.pinimg.com/736x/d5/c7/2c/d5c72cb18497d1ea65f29f0857a8c760.jpg'}
+          image={props.product.image ? props.product.image: 'https://i.pinimg.com/736x/d5/c7/2c/d5c72cb18497d1ea65f29f0857a8c760.jpg'}
           alt=""
         />
         <CardContent>
@@ -25,7 +25,5 @@ const Feed = (props) => {
     </div>
   );
 };
-const style = {
-  feed: {},
-};
+
 export default Feed;

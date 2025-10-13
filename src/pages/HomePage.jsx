@@ -1,6 +1,5 @@
 
-import { Button } from "@mui/material";
-import { getAllProducts } from "./api/products";
+import { getAllProducts } from "../api/products.api";
 import { useEffect, useState } from "react";
 import {Container, Grid} from '@mui/material';
 import Feed from "../components/Feed";
@@ -14,7 +13,7 @@ function HomePage() {
 
   const fetchData = (param) => {
     getAllProducts(param).then((res) => {
-      setProducts(response.data);
+      setProducts(res.data);
     });
   }
 
