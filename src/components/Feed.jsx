@@ -1,9 +1,10 @@
 import React from "react";
 import { Card, CardHeader, CardMedia, CardContent, Typography } from "@mui/material";
 
+
 const Feed = (props) => {
   return (
-    <div >
+    <div style={style.feed} >
       <Card sx={{ maxWidth: 345 }}>
         <CardHeader
           title={props.product.name}
@@ -19,11 +20,15 @@ const Feed = (props) => {
            {props.product.description}
           </Typography>
            <p>{props.product.price}</p>
-           <p>{props.product.catalog}</p>
+           <p>{props.product.catalog ? props.product.catalog : 'sin categoria'}</p>
         </CardContent>
       </Card>
     </div>
   );
 };
-
+const style = {
+  feed: {
+    marginTop: 20,
+  },
+};
 export default Feed;
