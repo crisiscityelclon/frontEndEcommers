@@ -23,7 +23,7 @@ const Header = () => {
                   FAQ
             </Button>
             </Link>
-            <Link to='/'>
+            <Link to='/contact'>
             <Button
                 sx={{ my: 2, marginRight: 3, color: 'white', display: 'block', border: 2 }}>
                   Contato

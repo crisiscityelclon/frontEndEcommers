@@ -1,80 +1,90 @@
 import { Container, Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const FaqPage = () => {
-  return (
-    <Container>
+
+function FaqPage() {
+
+
+    return (
+        <Container>
             <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          <Typography component="span">¿Cómo busco un producto?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          Puedes utilizar la barra de búsqueda ubicada en la parte superior de la página.
-           Ingresa palabras clave relacionadas con el producto que estás buscando y presiona Enter.
-        </AccordionDetails>
-      </Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                >
+                    <Typography sx={{color:'#1578A2'}}>¿Cómo busco un producto?</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        Primero debes ir al cuadro de texto situado en la esquina superior izquierda, ingresa el producto que deseas encontrar y luego haz click en el botón BUSCAR que está a la derecha.
+                        Puedes ingresar por el nombre del producto, por su descripción o la categoría.......
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
             <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          <Typography component="span">¿Cómo selecciono el producto que quiero comprar?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          Primero debes buscar el producto que deseas comprar utilizando la barra de búsqueda o navegando por las categorías.
-           Una vez que encuentres el producto, haz clic en él para ver más detalles.
-            En la página de detalles del producto, selecciona las opciones disponibles (como talla, color, cantidad, etc.) si es necesario.
-             Luego, haz clic en el botón "Agregar al carrito" para añadir el producto a tu carrito de compras.
-        </AccordionDetails>
-      </Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel2a-header"
+                >
+                    <Typography sx={{color:'#1578A2'}}>¿Cómo selecciono el producto que deseo comprar?</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        Primero debes ir al cuadro de texto situado en la esquina superior izquierda, ingresa el producto que deseas encontrar y luego haz click en el botón BUSCAR que está a la derecha.
+                        Puedes ingresar por el nombre del producto, por su descripción o la categoría.......
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
             <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          <Typography component="span">¿Donde veo los productos seleccionados?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          Puedes ver los productos que has seleccionado haciendo clic en el ícono del carrito de compras, generalmente ubicado en la esquina superior derecha de la página.
-           Al hacer clic en el ícono del carrito, se abrirá una vista previa o te llevará a la página del carrito de compras, donde podrás ver todos los productos que has agregado.
-            En esta página, podrás revisar los detalles de cada producto, como la cantidad, el precio y el subtotal.
-             También tendrás la opción de actualizar las cantidades, eliminar productos o proceder al pago.
-        </AccordionDetails>
-      </Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel2a-header"
+                >
+                    <Typography sx={{color:'#1578A2'}}>¿Dónde veo los productos seleccionados?</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        Primero debes ir al cuadro de texto situado en la esquina superior izquierda, ingresa el producto que deseas encontrar y luego haz click en el botón BUSCAR que está a la derecha.
+                        Puedes ingresar por el nombre del producto, por su descripción o la categoría.......
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
             <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          <Typography component="span">Titulo</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel2a-header"
+                >
+                    <Typography sx={{color:'#1578A2'}}>Titulo 2</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
             <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          <Typography component="span">Titulo</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
-    </Container>
-  )
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel2a-header"
+                >
+                    <Typography sx={{color:'#1578A2'}}>Titulo 2</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+
+        </Container>
+    );
 }
 
-export default FaqPage
+export default FaqPage;
