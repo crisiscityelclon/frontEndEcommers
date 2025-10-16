@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AppBar, IconButton, Divider, Toolbar, Typography, Box, Button } from "@mui/material";
 
 const Header = () => {

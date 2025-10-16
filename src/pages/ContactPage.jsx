@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { TextField, Button, Alert, Container, Snackbar, Toolbar, Typography } from '@mui/material';
+import { useState } from 'react';
+import { TextField, Button, Alert, Container, Snackbar } from '@mui/material';
 import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
