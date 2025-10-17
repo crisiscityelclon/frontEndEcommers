@@ -10,13 +10,13 @@ function Application() {
   return (
     <div>
       <CartProvider>
-      <Header> </Header>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/terms" element={<FaqPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-      <Footer> </Footer>
+        <Header> </Header>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/terms" element={<FaqPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+        <Footer> </Footer>
       </CartProvider>
     </div>
   );
