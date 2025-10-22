@@ -1,4 +1,3 @@
-
 import { getAllProducts } from '../api/products.api';
 import { useEffect, useState } from 'react';
 import { Container, Grid, TextField, Button } from '@mui/material';
@@ -23,7 +22,6 @@ function HomePage() {
     const fetchData = (param) => {
         setLoad(true)
         getAllProducts(param).then((response) => {
-            console.log(response.data);
             setProducts(response.data);
             setLoad(false)
         });

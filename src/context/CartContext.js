@@ -11,7 +11,7 @@ export const CartProvider = ({ children }) => {
   const addToCart = (product) => {
     //nos fijamos si ya no existe el item en el carrito
     const existingCartItem = cart.find((cartItem) => cartItem.product._id === product._id);
-    //item del carrito; chequear si la cantidad que se pide no excede el stock
+    // Item esta en el carrito;
     if (existingCartItem) {
       if (existingCartItem.quantity < product.stock) {
         const updatedCart = cart.map((cartItem) => {
@@ -33,17 +33,13 @@ export const CartProvider = ({ children }) => {
   const removeFromCart = (item) => {
     //logica para remover un item del carrito
     const updatedCart = cart.filter(
-      (cartItem) => cartItem.product._id !== item.product._id
-    );
+      (cartItem) => cartItem.product._id !== item.product._id);
     setCart(updatedCart);
   };
 
-  const resetCart = (item) => {
-    setCart([]);
-  };
-
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, resetCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+      
       {children}
     </CartContext.Provider>
   );
